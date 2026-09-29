@@ -1,0 +1,15 @@
+{
+  "name": "Baldur Initiative Bar",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "A Baldur's Gate inspired shared initiative bar for Owlbear Rodeo.",
+  "icon": "/icon.svg",
+  "author": "Custom Extension",
+  "action": {
+    "title": "Baldur Initiative",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 430,
+    "width": 520
+  }
+}
