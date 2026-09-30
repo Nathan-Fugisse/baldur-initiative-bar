@@ -2,13 +2,12 @@
   "name": "Baldur Initiative Bar",
   "version": "1.0.1",
   "manifest_version": 1,
-  "description": "Shared initiative tracker for Owlbear Rodeo with a Baldur's Gate inspired CRPG interface.",
-  "icon": "/icon.svg",
+  "description": "A Baldur's Gate inspired shared initiative bar for Owlbear Rodeo.",
   "action": {
     "title": "Baldur Initiative",
     "icon": "/icon.svg",
     "popover": "/",
-    "height": 430,
-    "width": 520
+    "width": 620,
+    "height": 112
   }
 }

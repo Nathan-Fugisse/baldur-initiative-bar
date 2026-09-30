@@ -1,47 +1,35 @@
 # Baldur Initiative Bar v1.0.1
 
-Extensão para Owlbear Rodeo focada em iniciativa, com interface inspirada em CRPGs/Baldur's Gate.
+Barra de iniciativa para Owlbear Rodeo com visual inspirado em CRPGs no estilo Baldur's Gate.
 
-## O que esta versão inclui
-
-- Ordem automática da maior para a menor iniciativa.
-- Retratos dos personagens/token quando disponíveis.
-- Valor de iniciativa visível.
-- Destaque do personagem do turno atual.
-- Botões de turno anterior e próximo turno.
-- Contador de rodada.
-- Adicionar/remover personagem da iniciativa pelo menu de contexto.
-- Editar iniciativa com duplo clique no combatente.
-- Estado sincronizado entre GM e jogadores usando metadados da sala.
-- Ícone SVG desenhado integralmente por código.
-- Configuração pronta para deploy na Vercel.
-- `manifest.json` em `public/`, que o Vite publica como `/manifest.json`.
-
-## Rodar localmente
+## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
 ```
 
-Para testar o build:
+## Build
 
 ```bash
 npm run build
-npm run preview
 ```
 
-## Publicar na Vercel
+O Vercel deve usar:
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
-1. Crie um repositório no GitHub.
-2. Envie esta pasta para o repositório.
-3. Na Vercel, importe o repositório.
-4. A configuração já está no `vercel.json`.
-5. A Vercel executará `npm install` e `npm run build`.
-6. O resultado será publicado a partir de `dist/`.
-
-Depois do deploy, o manifesto estará em:
-
+Depois do deploy, o manifesto fica em:
 `https://SEU-PROJETO.vercel.app/manifest.json`
 
-Esse é o endereço que deve ser colocado no Owlbear Rodeo ao adicionar a extensão.
+## Uso
+
+1. Selecione um personagem no Owlbear.
+2. Use **Add to Initiative** no menu de contexto.
+3. Informe a iniciativa.
+4. Os combatentes aparecem automaticamente em ordem decrescente.
+5. Clique em um combatente para torná-lo o turno atual.
+6. Use PREV/NEXT para avançar ou voltar.
+7. Duplo clique no combatente para editar a iniciativa.
+
+O estado da iniciativa e do turno é sincronizado pela sala.

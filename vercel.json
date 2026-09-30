@@ -1,6 +1,7 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "framework": "vite",
+  "cleanUrls": true,
+  "rewrites": [{ "source": "/manifest.json", "destination": "/manifest.json" }]
 }
