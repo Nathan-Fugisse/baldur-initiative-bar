@@ -1,4 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect x="5" y="5" width="54" height="54" rx="9" fill="#201b16" stroke="#b08a4b" stroke-width="3"/>
-<path d="M17 43 28 18l5 12 10-5-8 20-6-11z" fill="#d5b36b"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Baldur Initiative Bar icon">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a6"/>
+      <stop offset="0.25" stop-color="#d9a83c"/>
+      <stop offset="0.55" stop-color="#8d5a18"/>
+      <stop offset="0.78" stop-color="#e4b94f"/>
+      <stop offset="1" stop-color="#6a3d0c"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#183e68"/>
+      <stop offset="1" stop-color="#050b15"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Dark medallion -->
+  <circle cx="256" cy="256" r="226" fill="#05070b" stroke="#4a2b0b" stroke-width="14"/>
+  <circle cx="256" cy="256" r="202" fill="url(#blue)" stroke="url(#gold)" stroke-width="7"/>
+
+  <!-- Wing / dragon-like ornamental silhouette -->
+  <g fill="url(#gold)" stroke="#3e2408" stroke-width="4" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M238 201 C205 167 164 143 106 127 C128 151 143 174 154 196 C126 181 94 173 63 172 C96 197 121 224 139 253 C111 242 88 241 65 247 C102 263 132 285 151 311 C126 309 103 314 83 325 C121 335 151 352 176 374 C178 336 194 302 220 276 Z"/>
+    <path d="M274 201 C307 167 348 143 406 127 C384 151 369 174 358 196 C386 181 418 173 449 172 C416 197 391 224 373 253 C401 242 424 241 447 247 C410 263 380 285 361 311 C386 309 409 314 429 325 C391 335 361 352 336 374 C334 336 318 302 292 276 Z"/>
+  </g>
+
+  <!-- Central T -->
+  <g fill="url(#gold)" stroke="#3a2106" stroke-width="5" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M133 96 L379 96 L403 130 L349 151 L321 151 L321 357 L354 386 L321 416 L256 387 L191 416 L158 386 L191 357 L191 151 L163 151 L109 130 Z"/>
+    <path d="M256 53 L270 82 L300 92 L270 103 L256 133 L242 103 L212 92 L242 82 Z"/>
+    <path d="M256 379 L270 409 L300 420 L270 431 L256 461 L242 431 L212 420 L242 409 Z"/>
+  </g>
+
+  <!-- Inner T highlight -->
+  <path d="M151 116 H361 L343 132 H305 V345 L256 365 L207 345 V132 H169 Z" fill="#fff0a6" opacity="0.16"/>
+  <path d="M256 142 V352" stroke="#fff1ae" stroke-width="5" opacity="0.38"/>
+
+  <!-- Small center sigil -->
+  <path d="M256 215 L280 239 L256 263 L232 239 Z" fill="#081321" stroke="#f2cf70" stroke-width="5"/>
+  <path d="M256 226 L268 239 L256 252 L244 239 Z" fill="#d6a63e"/>
+
+  <!-- Outer runes / spikes -->
+  <g fill="url(#gold)" stroke="#3a2106" stroke-width="3">
+    <path d="M256 10 L266 35 L256 57 L246 35 Z"/>
+    <path d="M502 256 L477 266 L455 256 L477 246 Z"/>
+    <path d="M256 502 L246 477 L256 455 L266 477 Z"/>
+    <path d="M10 256 L35 246 L57 256 L35 266 Z"/>
+  </g>
 </svg>

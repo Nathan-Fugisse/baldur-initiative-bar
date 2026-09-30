@@ -1,31 +1,47 @@
-# Baldur Initiative Bar
+# Baldur Initiative Bar v1.0.1
 
-Extensão independente para Owlbear Rodeo.
+Extensão para Owlbear Rodeo focada em iniciativa, com interface inspirada em CRPGs/Baldur's Gate.
 
-## Recursos
-- Barra de iniciativa inspirada em interfaces de CRPG/Baldur's Gate.
-- Ordem automática da maior iniciativa para a menor.
-- Metadata sincronizado no Scene Item.
-- Turno atual e rodada sincronizados no Room Metadata.
-- Adicionar/remover pelo menu de contexto.
-- Clique para selecionar o turno.
-- Duplo clique para editar iniciativa.
-- Botões anterior/próximo.
-- Limpar iniciativa.
+## O que esta versão inclui
 
-## Desenvolvimento
+- Ordem automática da maior para a menor iniciativa.
+- Retratos dos personagens/token quando disponíveis.
+- Valor de iniciativa visível.
+- Destaque do personagem do turno atual.
+- Botões de turno anterior e próximo turno.
+- Contador de rodada.
+- Adicionar/remover personagem da iniciativa pelo menu de contexto.
+- Editar iniciativa com duplo clique no combatente.
+- Estado sincronizado entre GM e jogadores usando metadados da sala.
+- Ícone SVG desenhado integralmente por código.
+- Configuração pronta para deploy na Vercel.
+- `manifest.json` em `public/`, que o Vite publica como `/manifest.json`.
+
+## Rodar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-Depois use a URL do `manifest.json` no sistema de extensões do Owlbear.
-
-Para produção:
+Para testar o build:
 
 ```bash
 npm run build
+npm run preview
 ```
 
-A pasta `dist/` deve ser hospedada em HTTPS e o manifest deve apontar para a versão publicada.
+## Publicar na Vercel
+
+1. Crie um repositório no GitHub.
+2. Envie esta pasta para o repositório.
+3. Na Vercel, importe o repositório.
+4. A configuração já está no `vercel.json`.
+5. A Vercel executará `npm install` e `npm run build`.
+6. O resultado será publicado a partir de `dist/`.
+
+Depois do deploy, o manifesto estará em:
+
+`https://SEU-PROJETO.vercel.app/manifest.json`
+
+Esse é o endereço que deve ser colocado no Owlbear Rodeo ao adicionar a extensão.
